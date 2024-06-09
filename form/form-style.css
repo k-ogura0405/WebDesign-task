@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 fieldset{
     margin-bottom: 2rem;
 }
@@ -9,9 +10,4 @@ input[type]{
 
 a{
     font-size: 0.7rem;
-}
-
-.center th {
-    text-align: left;
-    vertical-align:top;
 }
