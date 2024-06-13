@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登録フォーム</title>
+    <link rel="stylesheet" href="register-style.css">
+</head>
+
+<body>
+    <p>必要事項を入力の上、送信ボタンを押してください。</p>
+    <form action="#" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="item">ID<span class="red">必須</span><span class="request">（メールアドレス）</span></td>
+                    <td class="input"><input type="email" name="email" placeholder="例: xxx@morijyobi.ac.jp" size="30"
+                            required></td>
+                </tr>
+                <tr>
+                    <td class="item">パスワード<span class="red">必須</span><span class="request">（半角英数字８文字以上）</span></td>
+                    <td class="input"><input type="passward" name="passward" minlength="8" size="30" required>
+                        <label><input type="checkbox" name="checkbox">パスワードを表示する</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">氏名<span class="red">必須</span></td>
+                    <td class="input">姓:<input type="text" name="last_name" placeholder="例:盛岡" required>
+                        名:<input type="text" name="first_name" placeholder="例:太郎" required></td>
+                </tr>
+                <tr>
+                    <td class="item">住所</td>
+                    <td class="input">〒<input type="text" name="address" size="8" value="020-0021" readonly><br>
+                        <input type="text" name="address" value="岩手県盛岡市中央道３丁目" readonly><br>
+                        <input type="text" name="address" placeholder="番地"><br>
+                        <input type="text" name="address" size="30" placeholder="建物名">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">携帯電話<span class="red">必須</span><span class="request">（ハイフンなし）</span></td>
+                    <td class="input"><input type="tel" name="tel" required></td>
+                </tr>
+                <tr>
+                    <td class="item">学科・学年<span class="red">必須</span></td>
+                    <td class="input">学科:<select name="department" required>
+                            <option value="">学科を選択してください</option>
+                            <option value="system">システム系学科</option>
+                            <option value="business">ビジネス系学科</option>
+                            <option value="design">デザイン系学科</option>
+                        </select>
+                        学年:<select name="school_year" repuired>
+                            <option value="">学年を選択してください</option>
+                            <option value="one">１年</option>
+                            <option value="two">２年</option>
+                            <option value="three">３年</option>
+                            <option value="four">４年</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">お得な情報・クーポン<span class="red">必須</span></td>
+                    <td class="input"><label><input type="radio" name="deals" value="receive" repuired>受け取る</label>
+                        <label><input type="radio" name="deals" value="no_receive" repuired>受け取らない</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">ご意見・ご要望<span class="request">（２００文字以内でご利用ください）</span></td>
+                    <td class="input"><textarea name="repuest" cols="50" rows="10" maxlength="200"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="reset">入力内容をクリアする</button>
+        <button type="submit">送信</button>
+    </form>
+</body>
+
+</html>
