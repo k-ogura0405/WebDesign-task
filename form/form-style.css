@@ -4,10 +4,10 @@ fieldset{
     margin-bottom: 2rem;
 }
 
-input[type]{
-    margin: 0.5rem;
-}
-
 a{
     font-size: 0.7rem;
+}
+
+input[type]{
+    margin: 0.5rem;
 }
