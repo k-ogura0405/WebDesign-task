@@ -1,0 +1,17 @@
+.header{ 
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.section{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer{
+    margin-top: 2em;
+    font-size: 0.9em;
+}

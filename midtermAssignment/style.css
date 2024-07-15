@@ -1,0 +1,20 @@
+.section-title{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.section-content{
+    font-size: 1em;
+}
+
+li{
+    list-style: circle;
+}
+
+body{
+    background-color: rgb(252, 250, 94);
+}
+
+.header{
+    background-color: rgb(21, 255, 0);
+}
